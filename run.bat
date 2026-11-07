@@ -27,7 +27,7 @@ if not exist "src\*.java" (
     exit /b 1
 )
 
-javac -cp ".;mysql-connector-j-8.0.33.jar" -d . src\*.java
+javac -encoding UTF-8 -cp ".;mysql-connector-j-8.0.33.jar" -d . src\*.java
 if errorlevel 1 (
     echo.
     echo ERROR: Compilation failed!
